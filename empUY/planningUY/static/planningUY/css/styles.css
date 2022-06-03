@@ -1,0 +1,119 @@
+/* General Styles */
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url('../image/bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    font-family: 'lucida sans';
+
+}
+
+.sections{
+    padding: 20px 0;
+    text-align: center;
+}
+
+header{
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+header i.icon{
+    position: center;
+    display: none;
+    color: white;
+}
+
+header .logo h2{
+    font-size: 35px;
+    color: rgb(233, 219, 219);
+}
+header .logo a{
+    text-decoration: none;
+}
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+header nav .nav-list .list a{
+    display: block;
+    padding: 5px 0;
+    margin: 9px 0;
+    color: rgb(233, 219, 219);
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+header nav .nav-list .list a:hover{
+    color: rgb(216, 216, 59);
+    font-size: 20px;
+}
+
+@media (max-width: 575px){
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header div .icon{
+        position: center;
+        text-align: center;
+        display: block;
+        color: rgb(233, 219, 219);
+        padding: 0;
+        border: 1px solid rgb(233, 219, 219);
+        margin-right: 150px;
+        font-size: 18px;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+}
+
+header .logo{
+     text-align: center;
+}
+
+
+section h3{
+    color: rgb(233, 219, 219);
+    font-size: 35px;
+    margin-bottom: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+section .home-content .home-desc{
+    color: rgb(233, 219, 219);
+    text-align: left;
+    font-weight: bold;
+}
+section .home-content h1{
+    color: transparent;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+    -webkit-text-stroke: 1px white;
+    line-height: 120px;
+    background: url('../image/menu.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 10s linear 2s infinite alternate;
+}
+@keyframes animate {
+    100% {
+        background-position: -500px -100px;
+    }
+}
+section .home-content{
+        padding: 75px 0;
+
+}

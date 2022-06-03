@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+.contact-form{
+    width: 1000px;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: lightblue;
+    border: none;
+    padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+}
+
+.tag{
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.container{
+    background-color: steelblue;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: none;
+    display: flex;
+}
+
+.submit-btn{
+    background-color: lightslategrey;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: slategrey;
+}

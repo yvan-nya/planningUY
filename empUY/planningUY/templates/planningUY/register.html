@@ -1,0 +1,75 @@
+{% extends "planningUY/base.html" %}
+
+{% block content %}
+<div class="container mt-5" id="card-login">
+    <div class="card p-3 login-border" style="background-color: rgb(238, 227, 238);">
+        <span class="text-center mt-3 text-pulse"><strong>SIGN IN</strong></span>
+        <form action="" method="POST" autocomplete="off">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            <div class="input-group">
+                <input type="text" id="username" class="form-control" name="username" placeholder="Enter your Username" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                    </div>
+                </div>
+            </div><br>
+            <label for="firstname">Firstname</label>
+            <div class="input-group">
+                <input type="text" id="firstname" class="form-control" name="firstname" placeholder="Enter your firstname" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                    </div>
+                </div>
+            </div><br>
+            <label for="lastname">Lastname</label>
+            <div class="input-group">
+                <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Enter your lastname">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                    </div>
+                </div>
+            </div><br>
+            <label for="email">Email</label>
+            <div class="input-group">
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+            </div><br>
+            <label for="password">Password</label>
+            <div class="input-group">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your Password" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" onclick="myfunction()" class="form-check-input" style="float: right;">
+            </div>
+            <label for="password1">Confirm Password</label>
+            <div class="input-group">
+                <input type="password" class="form-control" id="password1" name="password1" placeholder="Confirm your Password" required>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" onclick="myfunction1()" class="form-check-input" style="float: right;">
+            </div>
+            <div class="d-grid gap-2">
+                <input class="btn btn-outline-primary btn-sm mt-3" type="submit" value="Enter" id="btn-enter">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

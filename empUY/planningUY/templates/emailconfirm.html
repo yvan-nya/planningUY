@@ -1,0 +1,8 @@
+{% autoescape off %}
+Bienvenue le système d'authentification de EmploiUY
+Salut {{ name }}
+****************************************************
+Confirmer votre compte en cliquant sur le lien suivant.
+
+lien: https//{{domain}}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

@@ -1,0 +1,22 @@
+{% extends "planningUY/base.html" %}
+
+    {% block content%}
+    <!-- Section -->
+    <section class="sections home text-center">
+        <h3>CENTRE DE GESTION DES EMPLOIS DE TEMPS</h3>
+        <div class="home-content">
+            <p class="home-desc">Bienvenue à</p>
+            <h1>L'UNIVERSITÉ DE YAOUNDÉ I</h1>
+            <h4 class="home-desc">DÉCOUVREZ VOTRE PLANNING HEBDOMADAIRE</h4>
+            <button type="submit" name="" id="" class="btn btn-primary"  btn-lg btn-block><a href = "{% url 'login' %}" style="text-decoration: None; color: beige;"> Connexion </a></button>
+            <button type="submit" name="" id="" class="btn btn-primary " btn-lg btn-block ><a href="{% url 'register' %}" style="text-decoration: None; color: beige;"> Inscription </a></button>
+        </div>
+    </section>
+    <footer class="text-center text-lg-start  width: 100%;" id="footer" style="color: #fff;">
+        <div class="text-center p-3" style="background-color: transparent">&copy; {% now "Y" %} Copyright:
+            <a class="text-light" href="{% url 'home' %}" style="text-decoration: none;">
+                <span style="color: #8abaae;">www.planningUY.com</span>
+            </a>
+        </div>
+    </footer>
+    {% endblock content%}

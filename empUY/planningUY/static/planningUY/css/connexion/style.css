@@ -1,0 +1,39 @@
+/* Login */
+#card-login{
+    width: 450px;
+}
+#btn-enter{
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.login-border{
+    border-top: .4rem solid rgb(126, 118, 161);
+    border-bottom: .4rem solid rgb(126, 118, 161);
+    border-radius: 10px;
+}
+
+/* Bootstrap Configuration */
+.form-control:focus{
+    border-color: blueviolet;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-check-input:checked{
+    background-color: #8abaae;
+    border: blueviolet !important;
+    box-shadow: 0 0 8px blue !important;
+}
+.form-check-input{
+    border: blueviolet !important;
+    box-shadow: 0 0 8px blue !important;
+}
+.form-switch .form-check-input:focus{
+    background-color: rgb(136, 132, 158);
+}
+
+.btn:focus, .btn-active, .btn-close:focus{
+    outline: none;
+    box-shadow: none;
+}
